@@ -1,0 +1,16 @@
+<div class="container p-5  custom-container-width">
+  <h4>Авторизуйтесь для додавання видалення лікарів на чергуванні!</h4>
+  <form>
+      <div class="mb-3">
+        <label for="exampleLoginInput" class="form-label">Логін адміністратора</label>
+        <input type="text" class="form-control" id="exampleLoginInput" [(ngModel)]="login" name="login">
+        <div *ngIf="!loginValid" style="color: red;">Невірний логін</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Пароль адміністратора</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]="password" name="password">
+        <div *ngIf="!passwordValid" style="color: red;">Невірний пароль</div>
+      </div>
+      <button type="button" class="btn btn-primary" (click)="submitForm()">Вхід</button>
+    </form>
+</div>

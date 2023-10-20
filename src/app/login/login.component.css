@@ -1,0 +1,40 @@
+.is-invalid {
+  border: 1px solid red;
+}
+
+.invalid-feedback {
+  color: red;
+}
+
+.custom-container-width {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+@media (min-width: 576px) {
+  .custom-container-width {
+    width: 75%;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .custom-container-width {
+    width: 50%;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .custom-container-width {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .custom-container-width {
+    width: 50%;
+  }
+}

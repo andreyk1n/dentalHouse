@@ -1,0 +1,31 @@
+<div class="container p-5">
+    <h2>Додавання лікарів на зміну</h2>
+
+    <form (ngSubmit)="addDoctor()">
+        <div class="mb-3">
+            <label for="nameDoctorAdd" class="form-label">Ім'я</label>
+            <input type="text" class="form-control" id="nameDoctorAdd" name="name" aria-describedby="emailHelp" [(ngModel)]="newDoctor.name">
+        </div>
+        <div class="mb-3">
+            <label for="surnameDoctorAdd" class="form-label">Прізвище</label>
+            <input type="text" class="form-control" id="surnameDoctorAdd" name="surname" aria-describedby="emailHelp" [(ngModel)]="newDoctor.surname">
+        </div>
+        <div class="mb-3">
+            <label for="specialtyDoctorAdd" class="form-label">Спеціальність</label>
+            <input type="text" class="form-control" id="specialtyDoctorAdd" name="specialty" aria-describedby="emailHelp" [(ngModel)]="newDoctor.specialty">
+        </div>
+        <div class="mb-3">
+            <label for="ageDoctorAdd" class="form-label">Вік</label>
+            <input type="number" class="form-control" id="ageDoctorAdd" name="age" aria-describedby="emailHelp" [(ngModel)]="newDoctor.age">
+        </div>
+        <div class="mb-3">
+            <label for="avatarDoctorAdd" class="form-label">Аватар</label>
+            <input type="text" class="form-control" id="avatarDoctorAdd" name="avatar" aria-describedby="emailHelp" [(ngModel)]="newDoctor.img">
+        </div>
+        <div class="mb-3">
+            <label for="biographyDoctorAdd" class="form-label">Коротка біографія</label>
+            <input type="text" class="form-control" id="biographyDoctorAdd" name="biography" aria-describedby="emailHelp" [(ngModel)]="newDoctor.biography">
+        </div>
+        <button type="submit" class="btn btn-primary">Додати</button>
+    </form>
+</div>

@@ -1,0 +1,31 @@
+<div class="container  mt-5 mb-5">
+    <div class="container w-75">
+        <h2>Лікарі на зміні</h2>
+        <div class="table-responsive">
+            <table class="table table-hover table-striped">
+                <tbody>
+                    <tr *ngFor="let doctor of doctors;  let i = index">
+                        <td>{{doctor.name}} {{doctor.surname}}</td>
+                        <td>
+                            <button type="button" [routerLink]="['/theDoctor', i+1]" class="btn btn-primary">Переглянути</button>
+    
+                        </td>
+                        <td>
+                            <button type="button" (click)="deleteDoctor(doctor.id)" class="btn btn-danger">Видалити</button>
+    
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container p-3 g-5 d-flex flex-row">
+            <div>
+                <button type="button" routerLink="/login" class="btn btn-secondary">Повернутись назад</button>
+            </div>
+            <div class="ps-2">
+                <button type="button" routerLink="/addDoctor" class="btn btn-primary">Додати лікаря</button>
+            </div>
+        </div>
+
+    </div>

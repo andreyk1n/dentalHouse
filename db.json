@@ -1,0 +1,64 @@
+{
+  "doctors": [
+    {
+      "id": 1,
+      "name": "Софія",
+      "surname": "Джонсон",
+      "specialty": "Хірург-ортодонт",
+      "age": 40,
+      "img": "https://images.unsplash.com/photo-1643297653753-2d3f459edc6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80",
+      "biography": "Доктор Софія Джонсон - висококваліфікований хірург-ортодонт, яка має багаторічний досвід у проведенні хірургічних втручань в області ротової порожнини. Вона здобула визнання завдяки своїй вмілості і турботі про пацієнтів.",
+      "patients": {
+        "firstPat": false,
+        "secondPat": false,
+        "thirdPat": false,
+        "fourthPat": false
+      }
+    },
+    {
+      "id": 2,
+      "name": "Джонсон",
+      "surname": "Реторс",
+      "specialty": "Ортодонт",
+      "age": 28,
+      "img": "https://cdn.create.vista.com/api/media/small/283924090/stock-photo-happy-doctor-white-coat-glasses-crossed-arms",
+      "biography": "...",
+      "patients": {
+        "firstPat": false,
+        "secondPat": false,
+        "thirdPat": false,
+        "fourthPat": false
+      }
+    },
+    {
+      "id": 3,
+      "name": "Олександр",
+      "surname": "Коваленко",
+      "specialty": "Хірург-анестезіолог",
+      "age": 24,
+      "img": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "biography": "...",
+      "patients": {
+        "firstPat": false,
+        "secondPat": false,
+        "thirdPat": false,
+        "fourthPat": false
+      }
+    },
+    {
+      "id": 4,
+      "name": "Анна",
+      "surname": "Петренко",
+      "specialty": "Протезування",
+      "age": 33,
+      "img": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "biography": "...",
+      "patients": {
+        "firstPat": false,
+        "secondPat": false,
+        "thirdPat": false,
+        "fourthPat": false
+      }
+    }
+  ]
+}

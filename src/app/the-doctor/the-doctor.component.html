@@ -1,0 +1,21 @@
+<div class="container p-5" *ngIf="doctor">
+  <div class="row mt-5">
+    <div class="col-md-4">
+      <img [src]="doctor.img" class="img-fluid" alt="Лікар">
+    </div>
+    <div class="col-md-8">
+      <h2>{{ doctor.name }} {{ doctor.surname }}</h2>
+      <p>Вік: {{ doctor.age }}</p>
+      <p>Посада: {{ doctor.specialty }}</p>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-12">
+      <h4>Біографія:</h4>
+      <p>{{ doctor.biography }}</p>
+    </div>
+  </div>
+  <div>
+    <button type="button" routerLink="/editDoctors" class="btn btn-secondary">Повернутись назад</button>
+  </div>
+</div>

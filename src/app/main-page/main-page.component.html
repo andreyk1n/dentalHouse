@@ -1,0 +1,94 @@
+<div class="container p-3">
+  <h1 class="p-5">Дентал<span class="text-primary">Хаус</span></h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators ">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://dentistree.ae/wp-content/uploads/2023/03/slide-2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block text-dark">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://dentistree.ae/wp-content/uploads/2023/03/slide-2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block text-dark">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://dentistree.ae/wp-content/uploads/2023/03/slide-2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block text-dark">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="container p-3">
+          <p>Дентал<span class="text-primary">Хаус</span> - ваш поштовх до здорової та красивого посмішки!</p>
+          <p>Ласкаво просимо до нашої сучасної зубної клініки, де ваша усмішка - наша гордість. Наша місія - надати
+            найкращу стоматологічну допомогу у найзручніший спосіб для вас. Ми розуміємо, як важливо мати здорові зуби
+            та бездоганну усмішку, і завжди готові зробити все можливе, щоб допомогти вам досягти цієї мети.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Запис на безкоштовну консультацію до спеціаліста</h2>
+    
+    <form> 
+      <div class="mb-3" [ngClass]="{'has-error': !nameValid}">
+        <label for="inputName" class="form-label">Ім'я</label>
+        <input type="text" class="form-control" id="inputName" name="name" placeholder="Введіть ваше ім'я" required [(ngModel)]="name">
+        <div *ngIf="!nameValid" style="color: red;">Ім'я має містити принаймні 2 букви</div>
+      </div>
+      <div class="mb-3" [ngClass]="{'has-error': !emailValid}">
+        <label for="inputEmail" class="form-label">Електронна пошта</label>
+        <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Введіть вашу електронну пошту" required [(ngModel)]="email">
+        <div *ngIf="!emailValid" style="color: red;">Введіть коректну електронну пошту</div>
+      </div>
+      <div class="mb-3" [ngClass]="{'has-error': !phoneValid}">
+        <label for="inputPhone" class="form-label">Телефон</label>
+        <input type="tel" class="form-control" id="inputPhone" name="phone" placeholder="Введіть ваш номер телефону" required [(ngModel)]="phone">
+        <div *ngIf="!phoneValid" style="color: red;">Введіть коректний номер телефону</div>
+      </div>
+      <div class="mb-3">
+        <label for="inputMessage" class="form-label">Повідомлення</label>
+        <textarea class="form-control" id="inputMessage" name="message" rows="3" placeholder="Напишіть ваше повідомлення" [(ngModel)]="message"></textarea>
+      </div>
+      <button type="button" class="btn btn-primary" (click)="submitForm()">Записатися</button>
+    </form>
+    
+
+    
+    <!-- зробити валідацію -->
+  </div>
+
+
+
+</div>
